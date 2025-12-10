@@ -24,4 +24,6 @@ func InitDB() {
     // db.AutoMigrate(&models.Product{})
 }
 > **Important:** Make sure to update the DSN values (`host`, `user`, `password`, `dbname`, `port`) before running the project.
+> **Note:** Database migrations are available in `script/migration.sql`.
+
 
