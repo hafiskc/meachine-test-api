@@ -29,5 +29,7 @@ func main() {
 	r.GET("/products", handlers.ListProducts) //
 	r.POST("/variants", handlers.CreateVariant)
 	r.GET("/variants", handlers.ListVariants)
+	r.POST("/variantoptions", handlers.CreateVariantOption)
+	r.GET("/variantoptions", handlers.ListVariantOptios)
 	r.Run(":8086") // custom port
 }

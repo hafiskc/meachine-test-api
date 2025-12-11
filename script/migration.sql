@@ -21,3 +21,8 @@ CREATE TABLE variants (
     product_id UUID references products(id),
     name  VARCHAR(255)
 );
+CREATE TABLE variant_options (
+    id UUID PRIMARY KEY,
+    variant_id UUID references variants(id),
+    value  VARCHAR(255)
+);
